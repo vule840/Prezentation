@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<p>
+					Moje ime je Tomislav, završio sam Grafički fakultet prije mnogo
+					godina
+				</p>
+			</section>
+			<section>
+				<section>
+					<h1>Što je to CSS</h1>
+					<p>CSS (Cascading Style Sheets), odnosno kaskadni stilovi,
+						jednostavan su mehanizam za dodavanje stilova: fontova, boja
+						razmaka između paragrafa, uređivanje tablica.</p>
+					<p> Svojim dolaskom CSS
+						je izazvao pravu revoluciju na internetu i to zahvaljujući nizu
+						prednosti koje ima pred tabličnim layoutom (korištenje tablica za
+						formiranje stranice).</p>
+					<p>
+						Korištenjem CSS-a postalo je moguće odvojiti
+						prezentaciju podataka i dizajn od same strukture podataka. HTML
+						kôd postaje pregledniji i manji što znači da ga je puno lakše
+						kontrolirati, a također je moguće jednostavnom primjenom
+						parametara promijeniti izgled stranice.
+					</p>
+					<iframe src="https://giphy.com/embed/13FrpeVH09Zrb2" width="280" height="262"
+						allowfullscreen></iframe>
+				</section>
+
+				<section>
+					<img style="width:200px" src="img/css_style.jpg" alt="">
+					<p>
+						CSS je donio čitav niz načina za uređivanje prikaza podataka koji
+						do tada nisu postojali u samom HTML-u, a web programeri su razvili
+						korisne tehnike kojima možete uštediti dragocjeno vrijeme prilikom
+						izrade internet stranica.
+					</p>
+					<p> Mogučnosti formatiranja HTML-a
+						poprilično su ograničene. Kada dizajniramo izgled stranice u
+						HTML-u, ograničeni smo na tablice, kontrola fontova, i nekoliko
+						stilova teksta poput bold i italic.</p>
+					<p> Sa stilskim obrascima možemo:</p>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+			<h1><font color="red">Chapter 1.</font></h1>
+		  </code></pre>
+
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+			<h1 style="color: red;">Chapter 1.</h1>
+		  </code></pre>
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+			<style>
+				h1 {
+					color: red;
+				}
+			</style>
+		  </code></pre>
+
+				</section>
+				<section>
+					<h2>Kratka povijest CSS-a</h2>
+					<p>CSS je prvi put predložio Håkon Wium Lie 10. listopada 1994. godine. U to je vrijeme Lie radio s
+						Timom Berners-Leejem u CERN-u.</p>
+					<p> Otprilike u isto vrijeme predloženo je nekoliko drugih jezika
+						listova stilova za web, a rasprave o javnim mailing listama i unutar World Wide Web Consortiuma
+						rezultirale su objavljivanjem prve W3C CSS preporuke (CSS1) 1996. godine.</p>
+				</section>
+				<section>
+					<h2>Verzije CSS-a/moduli</h2>
+			
+				</section>
+				<section>
+					<h2>Doba Vendor prefixesa</h2>
+			
+				</section>
+				<section>
+					<h2>Doba poscss/precss plugina</h2>
+			
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Struktura i sintaksa CSS-a</h1>
+					<p>
+						Stilski obrasci sačinjeni su od stilskih pravila. Svako pravilo
+						ima dva dijela:  Selektor: Određuje element na koji se stilsko
+						pravilo odnosi  Deklaracija: Određuje kako izgleda sadržaj opisan
+						CSS-om Koristimo se sa setom interpunkcijskih i posebnih znakova
+						kako bi definirali stilsko pravilo. Sintaksa za stilska pravila
+						uvijek slijedi sljedeći uzorak:
+						<code class="hljs" data-trim data-line-numbers>
+				selektor {deklaracija;}
+			</code>
+
+						Deklaracija se dijeli na dvije stavke: 1. Properties (aspekti kako
+						da računalo prikaže tekst i grafiku). 2. Values (podaci koji
+						određuju kao želimo da tekst i slike izgledaju na našoj stranici).
+						Properties se od vrijednosti (value) u deklaraciji odvaja
+						dvotočkom, a svaka deklaracija završava s točkom-zarez:
+
+
+						<code class="hljs" data-trim data-line-numbers>
+				selector {property: value;}
+			 </code>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>Selektori i deklaracije</h2>
+						<p>
+							Za jedan selektor možemo napraviti nekoliko stilskih pravila,
+							svaki s jednom deklaracijom:
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+				h1 {color: teal;}
+				h1 {font-family:Arial;}
+				h1 {font-size: 36px;} 
+			  </code></pre>
+
+						No, tako velika kolekcija stilsih
+						pravila postaje teška za upotrebu. CSS vam dozvoljava da
+						kombinirate nekoliko deklaracija u jedno stillsko pravilo koje
+						utječe na karakteristike prikaza pojedinog selektora: Sve
+						deklaracije za h1 selektor su unutar istih vitičastih zagrada
+						({}) i odvojene su točkazarezom (;). Možemo staviti koliko god
+						hoćemo deklaracija u stilsko pravilo, samo trebamo svaku
+						deklaraciju završiti s točka-zarezom.
+						</p>
+						<section data-auto-animate>
+							<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					h1 {
+						color: teal; font-family: Arial; font-size: 36px; }
+				</code></pre>
+
+						</section>
+						<p>
+							Možemo napraviti da se isti set deklaracija odnosi na cijelu
+							skupinu selektora. Selektore je potrebno odvojiti zarezima.
+							Sljedeće stilsko pravilo ostavlja deklaracije za boju teksta,
+							font i veličinu fonta:
+						</p>
+
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					h1, h2, h3 { color: teal; font-family:
+						Arial; font-size: 36px; }
+				</code></pre>
+					</section>
+
+				</section>
+				<section>
+					<h2>Rad sa stilskim klasama i id-ovima</h2>
+					<p> Selektori se odnose na sljedeće::</p>
+					<ul>
+						<li>all elements of a specific type, e.g. the second-level headers h2</li>
+						<li>elements specified by attribute, in particular:</li>
+						<ul>
+							<li>ID: identifikator jedinstven unutar dokumenta, identificiran prefiksom hasha, npr. #id
+							</li>
+							<li>Klasa: identifikator koji može označiti više elemenata u dokumentu, označen prefiksom
+								razdoblja, npr.classname </li>
+						</ul>
+
+						<li>elements depending on how they are placed relative to others in the document tree.</li>
+					</ul>
+
+
+
+
+
+
+
+				</section>
+				<section>
+					<h2>Uključivanje CSS-a u stranicu</h2>
+				</section>
+				<section>
+					<h2>Nasljeđivanje</h2>
+					<p>Nasljeđivanje je ključna značajka u CSS-u; oslanja se na odnos predaka i potomaka za djelovanje.
+						Nasljeđivanje je mehanizam kojim se svojstva primjenjuju ne samo na određeni element, već i na
+						njegove potomke. Nasljeđivanje se oslanja na stablo dokumenta, a to je hijerarhija elemenata
+						XHTML-a na stranici koja se temelji na gniježđenju.</p>
+						<p>Nasljeđivanje je ključna značajka u CSS-u; oslanja se na odnos predaka i potomaka za djelovanje. Nasljeđivanje je mehanizam kojim se svojstva primjenjuju ne samo na određeni element, već i na njegove potomke. Nasljeđivanje se oslanja na stablo dokumenta, a to je hijerarhija elemenata XHTML-a na stranici koja se temelji na gniježđenju. Elementi potomaka mogu naslijediti vrijednosti svojstava CSS-a od bilo kojeg elementa pretka koji ih okružuje. </p>
+			
+						<p>Primjer:</p>
+						
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+							h1 {
+								color: pink;
+							 }
+							// Suppose there is an h1 element with an emphasizing element (em) inside:
+							 
+							 <h1>
+								This is to <em>illustrate</em> inheritance
+							 </h1>	
+						</code></pre>
+						<p>Ako em elementu nije dodijeljena boja, naglašena riječ "ilustriraj" nasljeđuje boju nadređenog elementa, h1. List stilova h1 ima ružičastu boju, stoga je em element također ružičast.</p>
+
+									</section>
+			</section>
+			<section>
+				<h1>Box model</h1>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+		});
+	</script>
+</body>
+
+</html>
