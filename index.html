@@ -26,7 +26,7 @@
 			</section>
 			<section>
 				<section>
-					<h1>Što je to CSS</h1>
+					<h1>1. Što je to CSS</h1>
 					<p>CSS (Cascading Style Sheets), odnosno kaskadni stilovi,
 						jednostavan su mehanizam za dodavanje stilova: fontova, boja
 						razmaka između paragrafa, uređivanje tablica.</p>
@@ -75,7 +75,7 @@
 
 				</section>
 				<section>
-					<h2>Kratka povijest CSS-a</h2>
+					<h2>1.1 Kratka povijest CSS-a</h2>
 					<p>CSS je prvi put predložio Håkon Wium Lie 10. listopada 1994. godine. U to je vrijeme Lie radio s
 						Timom Berners-Leejem u CERN-u.</p>
 					<p> Otprilike u isto vrijeme predloženo je nekoliko drugih jezika
@@ -83,22 +83,180 @@
 						rezultirale su objavljivanjem prve W3C CSS preporuke (CSS1) 1996. godine.</p>
 				</section>
 				<section>
-					<h2>Verzije CSS-a/moduli</h2>
-			
+					<h2>1.2 Verzije CSS-a/moduli</h2>
+					<p>CSS ima različite razine i profile. Svaka razina CSS-a nadovezuje se na posljednju, obično dodajući nove značajke i obično se označava kao CSS 1, CSS 2, CSS 3 i CSS 4. Profili su obično podskup jedne ili više razina CSS-a izgrađenih za određeni uređaj ili korisničko sučelje. Trenutno postoje profili za mobilne uređaje, pisače i televizore. Profile ne treba miješati s vrstama medija, koje su dodane u CSS 2.</p>
 				</section>
 				<section>
-					<h2>Doba Vendor prefixesa</h2>
-			
+					<h2>1.2.1 CSS1</h2>
+					<p>Prva specifikacija CSS-a koja je postala službena preporuka W3C-a je CSS razina 1, objavljena 17. prosinca 1996. Håkon Wium Lie i Bert Bos zaslužni kao i izvorni programeri. Među njegovim mogućnostima su potpora za:</p>
+					<ul><li><a href="/wiki/Typeface" title="Typeface">Svojstva fonta </a> kao što su tipografija i isticanje ("emphasis")</li>
+						<li>Boja teksta, pozadina i drugih elemenata</li>
+						<li>Atributi teksta kao što su razmak između riječi, slova i redaka teksta</li>
+						<li><a href="/wiki/Alignment_(typesetting)" class="mw-redirect" title="Alignment (typesetting)">Poravnanje</a> teksts i slika, <a href="/wiki/Table_(HTML)" class="mw-redirect" title="Table (HTML)">tablica</a> i drugih elemenata</li>
+						<li>Margina, obrub ("border"), podstava ("padding") i pozicioniranje za većinu elemenata</li>
+						<li>Jedinstvena identifikacija i generička klasifikacija skupina atributa</li></ul>
 				</section>
 				<section>
-					<h2>Doba poscss/precss plugina</h2>
-			
+					<h2>1.2.2 CSS2</h2>
+					<p>Specifikaciju CSS razine 2 razvio je W3C i objavio kao preporuku u svibnju 1998. Superskup CSS 1, CSS 2 uključuje niz novih mogućnosti kao što su apsolutno, relativno i fiksno pozicioniranje elemenata i z-indeksa, koncept vrsta medija, podrška za zvučne listove stilova (koji su kasnije zamijenjeni CSS 3 govornim modulima) i dvosmjerni tekst te nova svojstva fonta kao što su sjene.</p>
+				</section>
+				<section>
+					<h2>1.2.3 CSS3</h2>
+					<p>Za razliku od CSS-a 2, koji je velika pojedinačna specifikacija koja definira različite značajke, CSS 3 je podijeljen u nekoliko zasebnih dokumenata pod nazivom "moduli". Svaki modul dodaje nove mogućnosti ili proširuje značajke definirane u CSS 2, čuvajući kompatibilnost sa starijim verzijama. Rad na razini CSS-a 3 započeo je u vrijeme objave izvorne preporuke CSS-a 2. Najraniji nacrti CSS-a 3 objavljeni su u lipnju 1999. Zbog modularizacije različiti moduli imaju različitu stabilnost i statuse</p>
+					
+				</section>
+	
+				<section>
+					<table class="wikitable sortable jquery-tablesorter">
+						<caption>Sažetak glavnih specifikacija modula<sup id="cite_ref-51" class="reference"><a href="#cite_note-51">[51]</a></sup>
+						</caption>
+						<thead><tr>
+						<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Module
+						</th>
+						<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Specification title
+						</th>
+						<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Status
+						</th>
+						<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Date
+						</th></tr></thead><tbody>
+						<tr>
+						<td><samp>css3-background</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-background/">CSS Backgrounds and Borders Module Level 3</a>&nbsp;
+						</td>
+						<td><i>Candidate</i> Rec.</td>
+						<td align="right"><span data-sort-value="000000002020-12-01-0000" style="white-space:nowrap">Dec 2020</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-box</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-box">CSS basic box model</a>
+						</td>
+						<td><i>Candidate</i> Rec.</td>
+						<td align="right"><span data-sort-value="000000002020-12-01-0000" style="white-space:nowrap">Dec 2020</span>
+						</td></tr>
+						<tr>
+						<td><samp>css-cascade-3</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-cascade-3/">CSS Cascading and Inheritance Level 3</a>&nbsp;
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002021-02-01-0000" style="white-space:nowrap">Feb 2021</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-color</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-color">CSS Color Module Level 3</a>
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002018-06-01-0000" style="white-space:nowrap">Jun 2018</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-content</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-content-3/">CSS3 Generated and Replaced Content Module</a>&nbsp;
+						</td>
+						<td>Working <i>Draft</i> 2</td>
+						<td align="right"><span data-sort-value="000000002019-08-01-0000" style="white-space:nowrap">Aug 2019</span>
+						</td></tr>
+						<tr>
+						<td><samp>css-fonts-3</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-fonts-3/">CSS Fonts Module Level 3</a>
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002018-09-01-0000" style="white-space:nowrap">Sep 2018</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-gcpm</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-gcpm-3/">CSS Generated Content for Paged Media Module</a>
+						</td>
+						<td>Working <i>Draft</i></td>
+						<td align="right"><span data-sort-value="000000002014-05-01-0000" style="white-space:nowrap">May 2014</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-layout</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-template-3/">CSS Template Layout Module</a>
+						</td>
+						<td><i>Note</i></td>
+						<td align="right"><span data-sort-value="000000002015-03-01-0000" style="white-space:nowrap">Mar 2015</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-mediaqueries</samp>&nbsp;
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-mediaqueries/">Media Queries</a>
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002012-06-01-0000" style="white-space:nowrap">Jun 2012</span>
+						</td></tr>
+						<tr>
+						<td><samp>mediaqueries-4</samp>&nbsp;
+						</td>
+						<td><a rel="nofollow" class="external text" href="https://www.w3.org/TR/mediaqueries-4/">Media Queries Level 4</a>
+						</td>
+						<td><i>Candidate</i> Rec.</td>
+						<td align="right"><span data-sort-value="000000002020-07-01-0000" style="white-space:nowrap">Jul 2020</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-multicol</samp>&nbsp;
+						</td>
+						<td><a rel="nofollow" class="external text" href="https://www.w3.org/TR/css-multicol-1/">Multi-column Layout Module Level 1</a>
+						</td>
+						<td>Working <i>Draft</i></td>
+						<td align="right"><span data-sort-value="000000002021-02-01-0000" style="white-space:nowrap">Feb 2021</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-page</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css3-page/">CSS Paged Media Module Level 3</a>
+						</td>
+						<td>Working <i>Draft</i></td>
+						<td align="right"><span data-sort-value="000000002018-10-01-0000" style="white-space:nowrap">Oct 2018</span>
+						</td></tr>
+						<tr>
+						<td><samp>selectors-3</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="https://www.w3.org/TR/selectors-3/">Selectors Level 3</a>
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002018-11-01-0000" style="white-space:nowrap">Nov 2018</span>
+						</td></tr>
+						<tr>
+						<td><samp>selectors-4</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="https://www.w3.org/TR/selectors-4/">Selectors Level 4</a>
+						</td>
+						<td>Working <i>Draft</i></td>
+						<td align="right"><span data-sort-value="000000002018-11-01-0000" style="white-space:nowrap">Nov 2018</span>
+						</td></tr>
+						<tr>
+						<td><samp>css3-ui</samp>
+						</td>
+						<td><a rel="nofollow" class="external text" href="http://www.w3.org/TR/css-ui-3/">CSS Basic User Interface Module Level 3 (CSS3 UI)</a>
+						</td>
+						<td><i>Recommendation</i></td>
+						<td align="right"><span data-sort-value="000000002018-06-01-0000" style="white-space:nowrap">Jun 2018</span>
+						</td></tr></tbody><tfoot></tfoot></table>
+				</section>
+				<section>
+					<h2>1.2.4 CSS4</h2>
+					<p>Ne postoji jedinstvena, integrirana specifikacija CSS4 jer je specifikacija podijeljena na mnoge zasebne module koji se samostalno izjednačavaju. Moduli koji se temelje na stvarima iz CSS razine 2 započeli su na razini 3. Neki od njih već su dostigli razinu 4 ili se već približavaju razini 5. Ostali moduli koji definiraju potpuno nove funkcionalnosti, kao što je Flexbox, označeni su kao razina 1, a neki od njih približavaju se razini 2. Radna skupina CSS-a ponekad objavljuje "Snimke", zbirku cijelih modula i dijelova drugih skica koje se smatraju dovoljno stabilnima da ih implementiraju programeri preglednika. Do sada je pet takvih dokumenata "najbolje prakse" objavljeno kao Bilješke, 2007., 2010., 2015., 2017., i 2018.</p>
+				</section>
+				<section>
+					<h2>1.2 Doba Vendor prefixesa</h2>
+					<p>Pojedinačni dobavljači preglednika povremeno su uvodili nove parametre prije standardizacije i univerzalizacije. Da bi spriječili ometanje budućih implementacija, dobavljači su pripremili jedinstvena imena parametrima, kao što su -moz- za Mozilla Firefox, -webkit- nazvan po modulu za pregledavanje Apple Safarija, -o- za Opera Browser i -ms- za Microsoft Internet Explorer. Ponekad parametri s prefiksom dobavljača kao što su -moz-radijalno-gradijent i -webkit-linearni-gradijent imaju nešto drugačiju sintaksu u usporedbi s njihovim kolegama koji nisu dobavljač-prefiks. Prefiksirana svojstva postaju zastarjela do trenutka standardizacije. Programi su dostupni za automatsko dodavanje prefiksa za starije preglednike i za ukagavanje standardiziranih verzija prefiksitinih parametara. Budući da su prefiksi ograničeni na mali podskup preglednika, uklanjanje prefiksa omogućuje drugim preglednicima da vide funkcionalnost.</p>
+				</section>
+				<section>
+					<h2>1.3 Doba poscss/precss plugina</h2>
+					<p>Dugo vremena pisanje CSS-a bilo je dovoljno jednostavno: dodajte.css nastavak u datoteku, otvorite uređivač teksta i počnite pisati. No, tijekom godina, CSS je razvio vlastiti ekosustav tehnologija, od preprocesora kao što su Sass i Less do metodologija kao što su BEM i Atomic CSS, do novijih razvoja kao što je CSS-in-JS. Dok je BEM ispred čopora ovdje, Atomic CSS također počinje dobivati na snazi sa svojom potpuno novom filozofijom usmjerenom na komunalne klase. CSS-in-JS je jedan od najvećih događaja u posljednjih nekoliko godina u CSS svijetu. Baš kao što su preprocesori zaobišli CSS kako bi predstavili vlastiti skup novih značajki prije više od deset godina, CSS-in-JS knjižnice piggyback na JavaScriptovoj snazi da naprave vlastiti put bez čekanja da CSS sustigne.</p>
 				</section>
 			</section>
 
 			<section>
 				<section>
-					<h1>Struktura i sintaksa CSS-a</h1>
+					<h1>2. Struktura i sintaksa CSS-a</h1>
 					<p>
 						Stilski obrasci sačinjeni su od stilskih pravila. Svako pravilo
 						ima dva dijela:  Selektor: Određuje element na koji se stilsko
@@ -124,7 +282,7 @@
 				</section>
 				<section>
 					<section>
-						<h2>Selektori i deklaracije</h2>
+						<h2>2.1 Selektori i deklaracije</h2>
 						<p>
 							Za jedan selektor možemo napraviti nekoliko stilskih pravila,
 							svaki s jednom deklaracijom:
@@ -165,7 +323,7 @@
 
 				</section>
 				<section>
-					<h2>Rad sa stilskim klasama i id-ovima</h2>
+					<h2>2.2 Rad sa stilskim klasama i id-ovima</h2>
 					<p> Selektori se odnose na sljedeće::</p>
 					<ul>
 						<li>all elements of a specific type, e.g. the second-level headers h2</li>
@@ -181,26 +339,90 @@
 					</ul>
 
 
-
-
-
-
-
 				</section>
 				<section>
-					<h2>Uključivanje CSS-a u stranicu</h2>
+					<h2>2.3 Uključivanje CSS-a u stranicu</h2>
+					<ol>
+						<li>Eksterni CSS</li>
+						<li>Interni CSS</li>
+						<li>Umetnuti CSS</li>
+					</ol>
 				</section>
 				<section>
-					<h2>Nasljeđivanje</h2>
+					<h2>2.3.1 Eksterni CSS</h2>
+					<pre><code data-line-numbers="5"><script type="text/template">
+						<!DOCTYPE html>
+						<html>
+						<head>
+						<link rel="stylesheet" href="mystyle.css">
+						</head>
+						<body>
+
+						<h1>This is a heading</h1>
+						<p>This is a paragraph.</p>
+
+						</body>
+						</html>
+						</script></code></pre>
+					
+				</section>
+				<section>
+					<h2>2.3.2 Interni CSS</h2>
+					<pre><code data-line-numbers="5-14"><script type="text/template">
+						<!DOCTYPE html>
+						<html>
+						<head>
+						<style>
+						body {
+						  background-color: linen;
+						}
+						
+						h1 {
+						  color: maroon;
+						  margin-left: 40px;
+						}
+						</style>
+						</head>
+						<body>
+						
+						<h1>This is a heading</h1>
+						<p>This is a paragraph.</p>
+						
+						</body>
+						</html>
+						</script></code></pre>
+				</section>
+				<section>
+					<h2>2.3.3 Umetnuti CSS</h2>
+					<pre><code data-line-numbers="6-7"><script type="text/template">
+						<!DOCTYPE html>
+						<html>
+						<body>
+						
+						<h1 style="color:blue;text-align:center;">This is a heading</h1>
+						<p style="color:red;">This is a paragraph.</p>
+						
+						</body>
+						</html>
+						</script></code></pre>
+
+				
+				</section>
+				<section>
+					<h2>2.4 Nasljeđivanje</h2>
 					<p>Nasljeđivanje je ključna značajka u CSS-u; oslanja se na odnos predaka i potomaka za djelovanje.
 						Nasljeđivanje je mehanizam kojim se svojstva primjenjuju ne samo na određeni element, već i na
 						njegove potomke. Nasljeđivanje se oslanja na stablo dokumenta, a to je hijerarhija elemenata
 						XHTML-a na stranici koja se temelji na gniježđenju.</p>
-						<p>Nasljeđivanje je ključna značajka u CSS-u; oslanja se na odnos predaka i potomaka za djelovanje. Nasljeđivanje je mehanizam kojim se svojstva primjenjuju ne samo na određeni element, već i na njegove potomke. Nasljeđivanje se oslanja na stablo dokumenta, a to je hijerarhija elemenata XHTML-a na stranici koja se temelji na gniježđenju. Elementi potomaka mogu naslijediti vrijednosti svojstava CSS-a od bilo kojeg elementa pretka koji ih okružuje. </p>
-			
-						<p>Primjer:</p>
-						
-						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+					<p>Nasljeđivanje je ključna značajka u CSS-u; oslanja se na odnos predaka i potomaka za djelovanje.
+						Nasljeđivanje je mehanizam kojim se svojstva primjenjuju ne samo na određeni element, već i na
+						njegove potomke. Nasljeđivanje se oslanja na stablo dokumenta, a to je hijerarhija elemenata
+						XHTML-a na stranici koja se temelji na gniježđenju. Elementi potomaka mogu naslijediti
+						vrijednosti svojstava CSS-a od bilo kojeg elementa pretka koji ih okružuje. </p>
+
+					<p>Primjer:</p>
+
+					<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
 							h1 {
 								color: pink;
 							 }
@@ -210,9 +432,11 @@
 								This is to <em>illustrate</em> inheritance
 							 </h1>	
 						</code></pre>
-						<p>Ako em elementu nije dodijeljena boja, naglašena riječ "ilustriraj" nasljeđuje boju nadređenog elementa, h1. List stilova h1 ima ružičastu boju, stoga je em element također ružičast.</p>
+					<p>Ako em elementu nije dodijeljena boja, naglašena riječ "ilustriraj" nasljeđuje boju nadređenog
+						elementa, h1. List stilova h1 ima ružičastu boju, stoga je em element također ružičast.</p>
 
-									</section>
+				</section>
+
 			</section>
 			<section>
 				<h1>Box model</h1>
